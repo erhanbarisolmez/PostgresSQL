@@ -13,7 +13,9 @@ select * from film where length>60 and length<75
 
 Soru 3: film tablosunda bulunan tüm sütunlardaki verileri rental_rate 0.99 VE replacement_cost 12.99 VEYA 28.99 olma koşullarıyla sıralayınız.
 
-``` select * from film where rental_rate=0.99 and replacement_cost=12.99 ```
+``` 
+select * from film where rental_rate=0.99 and replacement_cost=12.99
+```
 
 Soru 4: customer tablosunda bulunan first_name sütunundaki değeri 'Mary' olan müşterinin last_name sütunundaki değeri nedir?
 
