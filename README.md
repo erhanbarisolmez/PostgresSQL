@@ -1,5 +1,5 @@
 ﻿# PostgresSQL
----Ödev 1
+Ödev 1
 Soru 1:film tablosunda bulunan title ve description sütunlarındaki verileri sıralayınız.
 
 select title, description from film order by title
