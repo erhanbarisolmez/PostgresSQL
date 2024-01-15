@@ -1,8 +1,9 @@
 ﻿# PostgresSQL
 # Ödev 1
-Soru 1:film tablosunda bulunan title ve description sütunlarındaki verileri sıralayınız.
+1:film tablosunda bulunan title ve description sütunlarındaki verileri sıralayınız.
 
-select title, description from film order by title
+cevap: select title, description from film order by title
+
 
 Soru 2: film tablosunda bulunan tüm sütunlardaki verileri film uzunluğu (length) 60 dan büyük VE 75 ten küçük olma koşullarıyla sıralayınız.
 select * from film where length>60 and length<75 
@@ -29,7 +30,7 @@ Aşağıdaki sorgu senaryolarını dvdrental örnek veri tabanı üzerinden ger�
 
 1.film tablosunda bulunan tüm sütunlardaki verileri replacement cost değeri 12.99 dan büyük eşit ve 16.99 küçük olma koşuluyla sıralayınız ( BETWEEN - AND yapısını kullanınız.)
    
-    cevap: SELECT * FROM film WHERE replacement_cost BETWEEN 12.99 AND 16.99;
+     cevap: SELECT * FROM film WHERE replacement_cost BETWEEN 12.99 AND 16.99;
     
 2.actor tablosunda bulunan first_name ve last_name sütunlardaki verileri first_name 'Penelope' veya 'Nick' veya 'Ed' değerleri olması koşuluyla sıralayınız. ( IN operatörünü kullanınız.)
    
