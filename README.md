@@ -99,3 +99,21 @@ SELECT title, length FROM film WHERE title LIKE '%n' ORDER BY length ASC LIMIT 5
 ```
 SELECT * FROM customer WHERE store_id = 1 ORDER BY last_name DESC LIMIT 5;
 ```
+
+# Ödev 6
+1.film tablosunda bulunan rental_rate sütunundaki değerlerin ortalaması nedir?
+```
+select AVG(rental_rate) from film
+```
+2.film tablosunda bulunan filmlerden kaç tanesi 'C' karakteri ile başlar?
+```
+select count(title) from film where title LIKE 'C%'
+```
+3.film tablosunda bulunan filmlerden rental_rate değeri 0.99 a eşit olan en uzun (length) film kaç dakikadır?
+```
+select MAX(length) from film where rental_rate = 0.99
+```
+4.film tablosunda bulunan filmlerin uzunluğu 150 dakikadan büyük olanlarına ait kaç farklı replacement_cost değeri vardır?
+```
+select count(replacement_cost) from film where length>150
+```
