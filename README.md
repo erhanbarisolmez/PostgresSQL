@@ -140,3 +140,34 @@ select store_id, count(customer_id) from customer group by store_id
 ```
 select country_id, count(*) as city_count, max(city) as sehir from city group by country_id order by city_count LIMIT 1
 ```
+
+# Ödev 8
+1.test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+```
+create table employee(
+	id serial primary key,
+	name varchar(50), 
+	birthday date, 
+	email varchar(100)
+)
+```
+2.Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+```
+https://www.mockaroo.com/
+insert into employee (name, birthday, email) values ('Evita', '2023/09/16', 'eclem0@mail.ru');
+```
+3.Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+```
+update employee set name = 'Barış', birthday='1996/04/10', email='baris@gmail.com'
+where id=1
+
+update employee set name = 'Erhan', birthday='1996/04/10', email='baris@gmail.com'
+where name='Barış'
+
+...
+
+```
+4.Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+```
+delete from employee where id=1
+```
